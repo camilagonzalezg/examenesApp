@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private List<String> errores = new ArrayList<>();
     private Toast toast;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

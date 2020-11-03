@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ExamenesApp</string>
+    <string name="titulo_app">Examenes App</string>
 </resources>

@@ -32,7 +32,7 @@ public class PacientesDBOpenHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(
                 "INSERT INTO pacientes(rut,nombre,apellido,fecha," +
                         "area,covid,temperatura,tos,presion)" +
-                        "VALUES (164842355" +
+                        "VALUES ('16484235-5'" +
                         ", 'camila'" +
                         ", 'gonzalez'" +
                         ", 2020" +

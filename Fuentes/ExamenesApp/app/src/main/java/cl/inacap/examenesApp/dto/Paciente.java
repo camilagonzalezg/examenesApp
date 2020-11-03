@@ -2,7 +2,12 @@ package cl.inacap.examenesApp.dto;
 
 import android.app.DatePickerDialog;
 
-public class Paciente {
+import java.io.Serializable;
+
+//Para transferir objetos por red, implementamos Serializable
+//haciendo que los objetos de esta clase sean transportados
+
+public class Paciente implements Serializable {
 
     private int id;
     private String rut;

@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+
+    <dimen name="ancho_imagen_toolbar">100dp</dimen>
+    <dimen name="tamanio_titulo_app">30sp</dimen>
+    <dimen name="margin_left_titulo">30dp</dimen>
+    <dimen name="nombre_paciente">30sp</dimen>
+    <dimen name="padding_paciente">30dp</dimen>
+    <dimen name="margin_top_paciente">20dp</dimen>
+
+    <dimen name="tamanio_txt_tv">20sp</dimen>
+    <dimen name="width_tv_paciente">360dp</dimen>
+    <dimen name="margin_start_tv_paciente">28dp</dimen>
+    <dimen name="margin_left_tv_paciente">24dp</dimen>
+    <dimen name="margin_top_tv_paciente">20dp</dimen>
+
+</resources>
