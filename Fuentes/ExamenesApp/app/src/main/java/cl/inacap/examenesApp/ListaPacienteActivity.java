@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.List;
 
 import cl.inacap.examenesApp.adapters.PacientesListAdapter;
@@ -28,6 +30,7 @@ public class ListaPacienteActivity extends AppCompatActivity {
     //private FloatingActionButton agregarBtn;
     //Referencia al adaptador
     private PacientesListAdapter adapter;
+    private FloatingActionButton agregarBtn;
 
     @Override
     protected void onResume() {
@@ -68,7 +71,15 @@ public class ListaPacienteActivity extends AppCompatActivity {
 
         //Acceder a referencia de toolbar para que funcione
         this.setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
-        //this.agregarBtn = findViewById(R.id.agregar_btn_fb);
+        this.agregarBtn = findViewById(R.id.agregar_btn_fB);
+        this.agregarBtn = findViewById(R.id.agregar_btn_fB);
+        this.agregarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListaPacienteActivity.this, RegistrarPacienteViewActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

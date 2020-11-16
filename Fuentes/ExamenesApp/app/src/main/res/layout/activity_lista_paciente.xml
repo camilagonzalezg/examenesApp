@@ -13,6 +13,15 @@
         android:id="@+id/pacientes_lv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
     </ListView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/agregar_btn_fB"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/tamanio_titulo_app"
+        android:background="@color/colorAccent"
+        android:src="@drawable/ic_baseline_add_circle_24">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 </LinearLayout>

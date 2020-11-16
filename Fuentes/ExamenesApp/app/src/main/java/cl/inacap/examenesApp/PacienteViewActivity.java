@@ -42,14 +42,10 @@ public class PacienteViewActivity extends AppCompatActivity {
         this.nombrePacienteTv = findViewById(R.id.nombre_txt_view);
         this.apellidoPacienteTv = findViewById(R.id.apellido_txt_view);
         this.fechaPacienteTv = findViewById(R.id.fecha_txt_view);
-        String fecha = fechaPacienteTv.getText().toString();
         this.areaPacienteTv = findViewById(R.id.area_txt_view);
-        String area = areaPacienteTv.getText().toString();
         this.covidPacienteTv = findViewById(R.id.covid_txt_view);
-        String covid = covidPacienteTv.getText().toString();
         this.temperaturaPacienteTv = findViewById(R.id.temperatura_txt_view);
         this.tosPacienteTv = findViewById(R.id.tos_txt_view);
-        String tos = tosPacienteTv.getText().toString();
         this.presionPacienteTv = findViewById(R.id.presion_txt_view);
 
         this.setSupportActionBar(this.toolbar);
@@ -63,12 +59,20 @@ public class PacienteViewActivity extends AppCompatActivity {
             this.rutPacienteTv.setText(this.paciente.getRut());
             this.nombrePacienteTv.setText(this.paciente.getNombre());
             this.apellidoPacienteTv.setText(this.paciente.getApellido());
-            this.fechaPacienteTv.setText(fecha);
-            this.areaPacienteTv.setText(area);
-            this.covidPacienteTv.setText(covid);
-            this.temperaturaPacienteTv.setText(this.paciente.getTemperatura());
-            this.tosPacienteTv.setText(tos);
-            this.presionPacienteTv.setText(this.paciente.getPresion());
+            this.fechaPacienteTv.setText(this.paciente.getFecha());
+            this.areaPacienteTv.setText(this.paciente.getArea());
+            if (this.paciente.getCovid()){
+                this.covidPacienteTv.setText("Si");
+            }else{
+                this.covidPacienteTv.setText("No");
+            }
+            this.temperaturaPacienteTv.setText(this.paciente.getTemperatura() + "");
+            if (this.paciente.getTos()){
+                this.tosPacienteTv.setText("Si");
+            }else{
+                this.tosPacienteTv.setText("No");
+            }
+            this.presionPacienteTv.setText(this.paciente.getPresion() + "");
     }
 }
 }

@@ -13,7 +13,7 @@ public class Paciente implements Serializable {
     private String rut;
     private String nombre;
     private String apellido;
-    private DatePickerDialog fecha;
+    private String fecha;
     private String area;
     private boolean covid;
     private int temperatura;
@@ -52,11 +52,11 @@ public class Paciente implements Serializable {
         this.apellido = apellido;
     }
 
-    public DatePickerDialog getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(DatePickerDialog fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
@@ -68,7 +68,7 @@ public class Paciente implements Serializable {
         this.area = area;
     }
 
-    public boolean isCovid() {
+    public boolean getCovid() {
         return covid;
     }
 
@@ -84,7 +84,7 @@ public class Paciente implements Serializable {
         this.temperatura = temperatura;
     }
 
-    public boolean isTos() {
+    public boolean getTos() {
         return tos;
     }
 

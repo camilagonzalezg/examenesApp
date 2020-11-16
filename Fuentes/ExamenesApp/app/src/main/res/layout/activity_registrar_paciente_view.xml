@@ -4,245 +4,223 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrarPacienteViewActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".RegistrarPacienteViewActivity">
+
+
+    <include layout="@layout/toolbar"></include>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <include layout="@layout/toolbar"></include>
+        <TextView
+            android:id="@+id/rut_txt_tv"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:layout_marginTop="@dimen/margin_top_tv_paciente"
+            android:text="Ingrese Rut Paciente" />
 
-            <LinearLayout
+        <EditText
+            android:id="@+id/rut_txt"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:hint="Rut Paciente"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/nombre_txt_tv"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:layout_marginTop="@dimen/margin_top_tv_paciente"
+            android:text="Ingrese Nombre Paciente" />
+
+        <EditText
+            android:id="@+id/nombre_txt"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:hint="Nombre Paciente"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/apellido_txt_tv"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:layout_marginTop="@dimen/margin_top_tv_paciente"
+            android:text="Ingrese Apellido Paciente" />
+
+        <EditText
+            android:id="@+id/apellido_txt"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:hint="Apellido Paciente"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/fecha_txt_tv"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:layout_marginTop="@dimen/margin_top_tv_paciente"
+            android:text="Ingrese Fecha" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fecha_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha" />
+
+            <EditText
+                android:id="@+id/fecha_txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginStart="@dimen/margin_start_tv_paciente"
+                android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+                android:hint="01_01_2020"
+                android:importantForAutofill="no"
+                android:inputType="date" />
 
-                <TextView
-                    android:id="@+id/rut_txt_tv"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:layout_marginTop="@dimen/margin_top_tv_paciente"
-                    android:text="Ingrese Rut Paciente"/>
+        </LinearLayout>
 
-                <EditText
-                    android:id="@+id/rut_txt"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:hint="Rut Paciente"
-                    android:importantForAutofill="no"
-                    android:inputType="text" />
+        <TextView
+            android:id="@+id/area_txt_tv"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:layout_marginTop="@dimen/margin_top_tv_paciente"
+            android:text="Area de Trabajo" />
 
-                <TextView
-                    android:id="@+id/nombre_txt_tv"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:layout_marginTop="@dimen/margin_top_tv_paciente"
-                    android:text="Ingrese Nombre Paciente"/>
+        <Spinner
+            android:id="@+id/area_spinner"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente" />
 
-                <EditText
-                    android:id="@+id/nombre_txt"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:hint="Nombre Paciente"
-                    android:importantForAutofill="no"
-                    android:inputType="text" />
+        <TextView
+            android:id="@+id/temperatura_txt_tv"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:layout_marginTop="@dimen/margin_top_tv_paciente"
+            android:text="Ingrese Temperatura del Paciente" />
 
-                <TextView
-                    android:id="@+id/apellido_txt_tv"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:layout_marginTop="@dimen/margin_top_tv_paciente"
-                    android:text="Ingrese Apellido Paciente"/>
+        <EditText
+            android:id="@+id/temperatura_txt"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:hint="Temperatura Paciente"
+            android:importantForAutofill="no"
+            android:inputType="number" />
 
-                <EditText
-                    android:id="@+id/apellido_txt"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:hint="Apellido Paciente"
-                    android:importantForAutofill="no"
-                    android:inputType="text" />
+        <TextView
+            android:id="@+id/presion_txt_tv"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:layout_marginTop="@dimen/margin_top_tv_paciente"
+            android:text="Ingrese Presión Arterial del Paciente" />
 
-                <TextView
-                    android:id="@+id/fecha_txt_tv"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:layout_marginTop="@dimen/margin_top_tv_paciente"
-                    android:text="Ingrese Fecha"/>
+        <EditText
+            android:id="@+id/presion_txt"
+            android:layout_width="@dimen/width_tv_paciente"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:hint="Presión Arterial Paciente"
+            android:importantForAutofill="no"
+            android:inputType="number" />
 
-                <Button
-                    android:id="@+id/fecha_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:text="Fecha"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_left_tv_paciente"
+            android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/fecha_txt"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:hint="01_01_2020"
-                    android:importantForAutofill="no"
-                    android:inputType="date" />
+            <TextView
+                android:id="@+id/covid_txt_tv"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_tv_paciente"
+                android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+                android:text="¿Presenta síntomas de COVID-19?" />
 
-                <TextView
-                    android:id="@+id/area_txt_tv"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:layout_marginTop="@dimen/margin_top_tv_paciente"
-                    android:text="Area de Trabajo"/>
+            <Switch
+                android:id="@+id/covid_switch_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_tv_paciente"
+                android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+                android:layout_weight="1"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+        </LinearLayout>
 
-                <Spinner
-                    android:id="@+id/area_spinner"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_left_tv_paciente"
+            android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/covid_txt_tv"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:layout_marginTop="@dimen/margin_top_tv_paciente"
-                    android:text="¿Presenta síntomas de COVID-19?"/>
+            <TextView
+                android:id="@+id/tos_txt_tv"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_tv_paciente"
+                android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+                android:text="¿Presenta tos?" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="@dimen/margin_left_tv_paciente"
-                    android:orientation="horizontal">
+            <Switch
+                android:id="@+id/tos_switch_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_tv_paciente"
+                android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+                android:layout_weight="1"
+                android:importantForAutofill="no"
+                android:inputType="number" />
 
-                <Switch
-                    android:id="@+id/covid_switch_si"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:hint="Sí"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:layout_weight="1"/>
+        </LinearLayout>
 
-                <Switch
-                    android:id="@+id/covid_switch_no"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:hint="No"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:layout_weight="1"/>
-                </LinearLayout>
 
-                <TextView
-                    android:id="@+id/temperatura_txt_tv"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:layout_marginTop="@dimen/margin_top_tv_paciente"
-                    android:text="Ingrese Temperatura del Paciente"/>
+        <Button
+            android:id="@+id/registrar_btn"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_tv_paciente"
+            android:layout_marginLeft="@dimen/margin_left_tv_paciente"
+            android:layout_marginTop="@dimen/margin_top_tv_paciente"
+            android:text="Registrar" />
+    </LinearLayout>
 
-                <EditText
-                    android:id="@+id/temperatura_txt"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:hint="Temperatura Paciente"
-                    android:importantForAutofill="no"
-                    android:inputType="number" />
-
-                <TextView
-                    android:id="@+id/tos_txt_tv"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:layout_marginTop="@dimen/margin_top_tv_paciente"
-                    android:text="¿Presenta tos?"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_marginRight="@dimen/margin_left_tv_paciente">
-                
-                <Switch
-                    android:id="@+id/tos_switch_si"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:hint="Sí"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:layout_weight="1"/>
-
-                <Switch
-                    android:id="@+id/tos_switch_no"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:hint="No"
-                    android:importantForAutofill="no"
-                    android:inputType="number"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-
-                <TextView
-                    android:id="@+id/presion_txt_tv"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:layout_marginTop="@dimen/margin_top_tv_paciente"
-                    android:text="Ingrese Presión Arterial del Paciente"/>
-
-                <EditText
-                    android:id="@+id/presion_txt"
-                    android:layout_width="@dimen/width_tv_paciente"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:hint="Presión Arterial Paciente"
-                    android:importantForAutofill="no"
-                    android:inputType="number" />
-
-                <Button
-                    android:id="@+id/registrar_btn"
-                    android:layout_width="360dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_start_tv_paciente"
-                    android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-                    android:layout_marginTop="@dimen/margin_top_tv_paciente"
-                    android:text="Registrar"/>
-            </LinearLayout>
-
-</LinearLayout>
 
 </LinearLayout>

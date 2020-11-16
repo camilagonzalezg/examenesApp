@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:text="Ingrese su nombre de usuario (Su RUT)"/>
     <EditText
+        android:background="@drawable/stylo_borde_editext_negro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Login_nombre_usuario">
@@ -30,9 +31,10 @@
         android:layout_height="wrap_content"
         android:text="Ingrese su contraseña de usuario (Pin 4 digitos)"/>
     <EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/Login_contrasenia_usuario">
+        android:background="@drawable/stylo_borde_editext_negro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Login_contrasenia_usuario">
     </EditText>
     <Button
         android:layout_width="match_parent"

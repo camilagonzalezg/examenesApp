@@ -14,7 +14,7 @@ public class PacientesDBOpenHelper extends SQLiteOpenHelper {
             + "rut TEXT,"
             + "nombre TEXT,"
             + "apellido TEXT,"
-            + "fecha DATE,"
+            + "fecha TEXT,"
             + "area TEXT,"
             + "covid BIT,"
             + "temperatura INTEGER,"
@@ -33,14 +33,14 @@ public class PacientesDBOpenHelper extends SQLiteOpenHelper {
                 "INSERT INTO pacientes(rut,nombre,apellido,fecha," +
                         "area,covid,temperatura,tos,presion)" +
                         "VALUES ('16484235-5'" +
-                        ", 'camila'" +
-                        ", 'gonzalez'" +
-                        ", 2020" +
+                        ", 'Camila'" +
+                        ", 'Gonzalez'" +
+                        ", '10/01/2020'" +
                         ", 'Atencion a publico'" +
                         ",1" +
                         ",36" +
                         ",1" +
-                        "90)");
+                        ",90)");
     }
 
     //Este cod se ejecuta solo cuando hay un cambio en la version de la bd

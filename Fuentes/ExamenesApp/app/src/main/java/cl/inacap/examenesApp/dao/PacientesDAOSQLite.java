@@ -30,15 +30,15 @@ public class PacientesDAOSQLite implements PacientesDAO {
         SQLiteDatabase writer = this.db.getWritableDatabase();
         String sql = String.format("INSERT INTO pacientes(" +
                 "rut,nombre,apellido,fecha,area,covid,temperatura,tos,presion) " +
-                        "VALUES('%s','%s','%s',%t,'%s',%b,%d,%b,%d"
+                        "VALUES('%s','%s','%s',%s,'%s',%b,%d,%b,%d"
         , p.getRut()
         , p.getNombre()
         , p.getApellido()
         , p.getFecha()
         , p.getArea()
-        , p.isCovid()
+        , p.getCovid()
         , p.getTemperatura()
-        , p.isTos()
+        , p.getTos()
         , p.getPresion());
         writer.execSQL(sql);
         writer.close();
@@ -55,8 +55,7 @@ public class PacientesDAOSQLite implements PacientesDAO {
         try{
             if(reader != null){
                 Cursor c = reader.rawQuery("SELECT id,rut,nombre,apellido" +
-                        "fecha,area,covid,temperatura,tos,presion FROM pacientes",null);
-
+                        ",fecha,area,covid,temperatura,tos,presion FROM pacientes",null);
                 if(c.moveToFirst()){
                     do{
                         Paciente p = new Paciente();
@@ -64,11 +63,19 @@ public class PacientesDAOSQLite implements PacientesDAO {
                         p.setRut(c.getString(1));
                         p.setNombre(c.getString(2));
                         p.setApellido(c.getString(3));
-                        //p.setFecha(SimpleDateFormat.parse(c.getString(4)));
+                        p.setFecha(c.getString(4));
                         p.setArea(c.getString(5));
-                        //p.setCovid(c.getString(6));
+                        if (c.getInt(6) == 1){
+                            p.setCovid(true);
+                        }else{
+                            p.setCovid(false);
+                        }
                         p.setTemperatura(c.getInt(7));
-                        //p.setTos(c.getString(8));
+                        if (c.getInt(8) == 1){
+                            p.setTos(true);
+                        }else{
+                            p.setTos(false);
+                        }
                         p.setPresion(c.getInt(9));
                         pacientes.add(p);
                     }while(c.moveToNext());{
