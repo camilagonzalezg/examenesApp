@@ -27,18 +27,29 @@ public class PacientesDAOSQLite implements PacientesDAO {
 
     @Override
     public Paciente save(Paciente p) {
+        int bitcovid, bittos;
+        if (p.getCovid()){
+            bitcovid  = 1;
+        }else{
+            bitcovid  = 0;
+        }
+        if (p.getTos()){
+            bittos = 1;
+        }else{
+            bittos = 0;
+        }
         SQLiteDatabase writer = this.db.getWritableDatabase();
         String sql = String.format("INSERT INTO pacientes(" +
                 "rut,nombre,apellido,fecha,area,covid,temperatura,tos,presion) " +
-                        "VALUES('%s','%s','%s',%s,'%s',%b,%d,%b,%d"
+                        "VALUES('%s','%s','%s',%s,'%s',%s,%d,%s,%d)"
         , p.getRut()
         , p.getNombre()
         , p.getApellido()
         , p.getFecha()
         , p.getArea()
-        , p.getCovid()
+        , bitcovid
         , p.getTemperatura()
-        , p.getTos()
+        , bittos
         , p.getPresion());
         writer.execSQL(sql);
         writer.close();
