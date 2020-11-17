@@ -52,7 +52,6 @@ public class RegistrarPacienteViewActivity extends AppCompatActivity {
         this.temperaturaTxt = findViewById(R.id.temperatura_txt);
         this.tosTxt = findViewById(R.id.tos_switch_si);
         this.presionTxt = findViewById(R.id.presion_txt);
-        this.fechaTxt = findViewById(R.id.fecha_txt);
         this.agregarBtn = findViewById(R.id.registrar_btn);
         this.setSupportActionBar(this.toolbar);
         this.getSupportActionBar().setDisplayHomeAsUpEnabled(true);

@@ -21,7 +21,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_tv_paciente"
             android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-            android:layout_marginTop="@dimen/margin_top_tv_paciente"
             android:text="Ingrese Rut Paciente" />
 
         <EditText
@@ -40,7 +39,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_tv_paciente"
             android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-            android:layout_marginTop="@dimen/margin_top_tv_paciente"
             android:text="Ingrese Nombre Paciente" />
 
         <EditText
@@ -59,7 +57,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_tv_paciente"
             android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-            android:layout_marginTop="@dimen/margin_top_tv_paciente"
             android:text="Ingrese Apellido Paciente" />
 
         <EditText
@@ -78,7 +75,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_tv_paciente"
             android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-            android:layout_marginTop="@dimen/margin_top_tv_paciente"
             android:text="Ingrese Fecha" />
 
         <EditText
@@ -98,7 +94,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_tv_paciente"
             android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-            android:layout_marginTop="@dimen/margin_top_tv_paciente"
             android:text="Area de Trabajo" />
 
         <Spinner
@@ -114,7 +109,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_tv_paciente"
             android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-            android:layout_marginTop="@dimen/margin_top_tv_paciente"
             android:text="Ingrese Temperatura del Paciente" />
 
         <EditText
@@ -133,7 +127,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_start_tv_paciente"
             android:layout_marginLeft="@dimen/margin_left_tv_paciente"
-            android:layout_marginTop="@dimen/margin_top_tv_paciente"
             android:text="Ingrese Presión Arterial del Paciente" />
 
         <EditText

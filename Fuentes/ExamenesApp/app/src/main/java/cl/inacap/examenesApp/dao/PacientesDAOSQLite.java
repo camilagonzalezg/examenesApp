@@ -41,7 +41,7 @@ public class PacientesDAOSQLite implements PacientesDAO {
         SQLiteDatabase writer = this.db.getWritableDatabase();
         String sql = String.format("INSERT INTO pacientes(" +
                 "rut,nombre,apellido,fecha,area,covid,temperatura,tos,presion) " +
-                        "VALUES('%s','%s','%s',%s,'%s',%s,%d,%s,%d)"
+                        "VALUES('%s','%s','%s','%s','%s',%s,%d,%s,%d)"
         , p.getRut()
         , p.getNombre()
         , p.getApellido()
